@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'; // 👈 Import Link
 const Login = () => {
   return (
     <div className="d-flex align-items-center justify-content-center min-vh-100" style={{ backgroundColor: '#ccf8db' }}>
-      <div className="text-center w-100 px-4 p-5 mt-4 border border-dark-subtle rounded-4 shadow-sm" style={{ maxWidth: '400px' , backgroundColor: '#ccf8db' }}>
+      <div className="text-center w-100 px-4 p-5 mt-4 border border-dark-subtle rounded-4 shadow-sm" style={{ maxWidth: '500px' , backgroundColor: '#ccf8db' }}>
         {/* Logo */}
         <img
           src="https://i.ibb.co/KxdfWFTv/3db2775f70a199b26bc47425ca16af18-1-removebg-preview.png"
