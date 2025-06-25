@@ -1,39 +1,85 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-    <div className="min-vh-100 d-flex align-items-center justify-content-center bg-success bg-opacity-10">
-      <div className="bg-white rounded-4 shadow p-4 p-md-5 w-100" style={{ maxWidth: '420px' }}>
-        <div className="text-center mb-4">
-          <img
-            src="https://readdy.ai/api/search-image?query=A%20cute%20cartoon%20monkey%20character%20with%20a%20red%20circular%20background%2C%20stylized%20as%20a%20mascot%20logo%20for%20a%20business.%20The%20monkey%20has%20a%20friendly%20face%20with%20big%20eyes%20and%20is%20wearing%20a%20suit%20or%20business%20attire.%20The%20logo%20has%20a%20circular%20border%20with%20text%20around%20it&width=200&height=200&seq=1&orientation=squarish"
-            alt="Logo"
-            className="mb-3"
-            style={{ width: '96px', height: '96px', objectFit: 'contain' }}
-          />
-          <h3 className="fw-semibold">Create Your Account</h3>
-          <p className="text-muted small">Join us and manage your loans easily</p>
-        </div>
+    <div className="min-vh-100 d-flex align-items-center justify-content-center" style={{ backgroundColor: '#ccf8db' }}>
+      <div
+        className="text-center w-100 px-3 mt-4 border border-dark-subtle rounded-4 shadow-sm"
+        style={{ maxWidth: '500px', backgroundColor: '#ccf8db' }}
+      >
+        {/* Logo */}
+        <img
+          src="https://i.ibb.co/KxdfWFTv/3db2775f70a199b26bc47425ca16af18-1-removebg-preview.png"
+          alt="Logo"
+          className="mb-1"
+          style={{ height: '200px', objectFit: 'contain' }}
+        />
 
+        {/* Title */}
+        <h3 className="fw-bold mb-1" style={{ color: '#4d4d4d' }}>
+          Create Your Account
+        </h3>
+        <p className="text-muted mb-4 small">Join us and manage your loans easily</p>
+
+        {/* Form */}
         <form className="d-grid gap-3">
-          <input type="text" className="form-control rounded-pill border-success-subtle" placeholder="Full Name" />
-          <input type="email" className="form-control rounded-pill border-success-subtle" placeholder="Email Address" />
-          <input type="password" className="form-control rounded-pill border-success-subtle" placeholder="Password" />
-          <input type="password" className="form-control rounded-pill border-success-subtle" placeholder="Confirm Password" />
-          <input type="tel" className="form-control rounded-pill border-success-subtle" placeholder="Phone Number" />
-          <input type="text" className="form-control rounded-pill border-success-subtle" placeholder="Address" />
+          <input
+            type="text"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Full Name"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
+          <input
+            type="email"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Email Address"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
+          <input
+            type="password"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Password"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
+          <input
+            type="password"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Confirm Password"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
+          <input
+            type="tel"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Phone Number"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
+          <input
+            type="text"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Address"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
 
-          <div className="form-check mt-2">
+          <div className="form-check text-start">
             <input className="form-check-input" type="checkbox" id="terms" />
-            <label className="form-check-label" htmlFor="terms">
+            <label className="form-check-label small" htmlFor="terms">
               I agree to the <span className="text-danger">terms and conditions</span>
             </label>
           </div>
 
-          <button className="btn btn-success w-100 rounded-pill mt-3 py-2">
+          <button className="btn btn-danger rounded-pill py-2 fw-semibold">
             Sign Up
           </button>
         </form>
+
+        {/* Sign-in Link */}
+        <p className="mt-2" style={{ color: '#4d4d4d' }}>
+          Already have an account?{' '}
+          <Link to="/" className="text-danger fw-semibold text-decoration-none">
+            Sign in
+          </Link>
+        </p>
       </div>
     </div>
   );
