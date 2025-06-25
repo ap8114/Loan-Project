@@ -8,7 +8,7 @@ const Sidebar = () => {
         className="d-flex flex-column align-items-center p-3 shadow"
         style={{
           width: '200px',
-          backgroundColor: '#E0F4E8',
+          backgroundColor: '#E8F5E9',
           height: '100vh',
           position: 'sticky',
           top: 0,

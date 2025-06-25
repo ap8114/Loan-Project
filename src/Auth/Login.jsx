@@ -40,9 +40,11 @@ const Login = () => {
         </div>
 
         {/* Sign-in Button */}
+        <Link to="/dashboard">
         <button className="btn btn-danger rounded-pill w-100 py-2 fw-semibold">
           Sign in
         </button>
+        </Link>
 
         {/* Sign-up Link */}
         <p className="mt-3" style={{ color: '#4d4d4d' }}>

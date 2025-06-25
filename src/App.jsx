@@ -1,65 +1,36 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useState } from "react";
 import "./App.css";
 
-
-import { useState } from "react";
 import ClientLogin from "./Auth/Login";
 import Signup from "./Auth/Signup";
 
 
-
-
-
-
+import Dashboard from "./Component/Dashboard/Dashboard";
+import MainLayout from "./Layout/Mainlayout";
 
 function App() {
-  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
-
-  const menusidebarcollaps = () => {
-    setIsSidebarCollapsed(true);
-  };
-
-  const toggleSidebar = () => {
-    setIsSidebarCollapsed((prev) => !prev);
-  };
-
   const location = useLocation();
-
-  // Define routes where navbar and sidebar should be hidden
-  const NO_LAYOUT_ROUTES = ["/", "/singup"];
+  const NO_LAYOUT_ROUTES = ["/", "/signup"];
   const hideLayout = NO_LAYOUT_ROUTES.includes(location.pathname);
 
   return (
     <>
-      {/* navbar - hidden on login/signup page */}
-      {!hideLayout && <Navbar toggleSidebar={toggleSidebar} />}
-
-      {/* main content area */}
-      <div className={`main-content ${hideLayout ? "full-width" : ""}`}>
-        {/* sidebar - hidden on login/signup page */}
-        {!hideLayout && (
-          <Sidebar
-            collapsed={isSidebarCollapsed}
-            menuItemClick={menusidebarcollaps}
-          />
-        )}
-
-        {/* right side content */}
-        <div
-          className={`right-side-content ${isSidebarCollapsed && !hideLayout ? "collapsed" : ""
-            }`}
-        >
+      {hideLayout ? (
+        // Login & Signup without layout
+        <Routes>
+          <Route path="/" element={<ClientLogin />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      ) : (
+        // All other routes wrapped in MainLayout
+        <MainLayout>
           <Routes>
-            {/* Authentication routes (no navbar/sidebar) */}
-            <Route path="/" element={<ClientLogin />} />
-            <Route path="/singup" element={<Signup />} />
-
-          {/*Admin Dashboard Route Start */}
-           
-            
+            <Route path="/dashboard" element={<Dashboard />} />
+            {/* Add more protected/admin routes here */}
           </Routes>
-        </div>
-      </div>
+        </MainLayout>
+      )}
     </>
   );
 }
