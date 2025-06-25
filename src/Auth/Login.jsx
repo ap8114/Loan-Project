@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom'; // 👈 Import Link
 
-const ClientLogin = () => {
+const Login = () => {
   return (
     <div className="d-flex align-items-center justify-content-center min-vh-100" style={{ backgroundColor: '#ccf8db' }}>
-      <div className="text-center w-100" style={{ maxWidth: '400px' }}>
+      <div className="text-center w-100 px-4 p-5 mt-4 border border-dark-subtle rounded-4 shadow-sm" style={{ maxWidth: '400px' , backgroundColor: '#ccf8db' }}>
         {/* Logo */}
         <img
-          src="https://i.ibb.co/3yG9tdt5/3db2775f70a199b26bc47425ca16af18-1-removebg-preview.png" // Replace with your logo
+          src="https://i.ibb.co/KxdfWFTv/3db2775f70a199b26bc47425ca16af18-1-removebg-preview.png"
           alt="Logo"
           className="mb-1"
           style={{ height: '200px', objectFit: 'contain' }}
@@ -42,9 +43,17 @@ const ClientLogin = () => {
         <button className="btn btn-danger rounded-pill w-100 py-2 fw-semibold">
           Sign in
         </button>
+
+        {/* Sign-up Link */}
+        <p className="mt-3" style={{ color: '#4d4d4d' }}>
+          Don’t have an account?{' '}
+          <Link to="/singup" className="text-danger fw-semibold text-decoration-none">
+            Sign up
+          </Link>
+        </p>
       </div>
     </div>
   );
 };
 
-export default ClientLogin;
+export default Login;
