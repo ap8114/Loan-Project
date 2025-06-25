@@ -36,6 +36,12 @@ const Signup = () => {
             placeholder="Email Address"
             style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
           />
+           <input
+            type="tel"
+            className="form-control rounded-pill py-2 px-3"
+            placeholder="Phone Number"
+            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
+          />
           <input
             type="password"
             className="form-control rounded-pill py-2 px-3"
@@ -46,18 +52,6 @@ const Signup = () => {
             type="password"
             className="form-control rounded-pill py-2 px-3"
             placeholder="Confirm Password"
-            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
-          />
-          <input
-            type="tel"
-            className="form-control rounded-pill py-2 px-3"
-            placeholder="Phone Number"
-            style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
-          />
-          <input
-            type="text"
-            className="form-control rounded-pill py-2 px-3"
-            placeholder="Address"
             style={{ borderColor: '#4d4d4d', color: '#4d4d4d', fontWeight: '500' }}
           />
 
