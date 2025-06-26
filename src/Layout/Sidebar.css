@@ -1,16 +1,15 @@
 .sidebar-container {
-  width: 275px;
+  width: 200px;
   scrollbar-width: none;
   height: 100%;
   overflow-y: auto;
   transition: width 0.3s ease;
   z-index: 1;
   background-color: #e8f5e9;
-  position: fixed;
 }
 
 .sidebar-container.collapsed {
-  width: 80px;
+  width: 30px;
 }
 
 @media (min-width: 320px) and (max-width: 365px) {

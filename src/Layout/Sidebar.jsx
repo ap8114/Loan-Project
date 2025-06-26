@@ -23,18 +23,34 @@ const Sidebar = ({ collapsed }) => {
             {/* Dashboard */}
             <li
               className={`menu-item ${
-                isActive("/admin-dashboard") ? "active" : ""
+                isActive("/dashboard") ? "active" : ""
               }`}
             >
               <div
                 className="menu-link menu-i"
                 onClick={() => {
-                  navigate("/admin-dashboard");
+                  navigate("/dashboard");
                   menuItemClick();
                 }}
               >
                 <i className="fa-solid fa-compass"></i>
                 <span className="menu-text">Dashboard</span>
+              </div>
+            </li>
+            <li
+              className={`menu-item ${
+                isActive("/") ? "active" : ""
+              }`}
+            >
+              <div
+                className="menu-link menu-i"
+                onClick={() => {
+                  navigate("/");
+                  menuItemClick();
+                }}
+              >
+                <i className="fa-solid fa-compass"></i>
+                <span className="menu-text">Logout</span>
               </div>
             </li>
           </>

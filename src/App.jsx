@@ -6,6 +6,7 @@ import Sidebar from "./Layout/Sidebar";
 import { useState } from "react";
 import Login from "./Auth/Login";
 import Signup from "./Auth/Signup";
+import Dashboard from "./Component/Dashboard/Dashboard";
 
 function App() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -46,6 +47,7 @@ function App() {
             {/* Authentication routes (no navbar/sidebar) */}
             <Route path="/" element={<Login/>} />
             <Route path="/singup" element={<Signup />} />
+            <Route path="/dashboard" element={<Dashboard/>} />
           </Routes>
         </div>
       </div>
