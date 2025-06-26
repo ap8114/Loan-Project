@@ -5,6 +5,7 @@
   overflow-y: auto;
   transition: width 0.3s ease;
   z-index: 1;
+  margin-top: 80px;
   background-color: #e8f5e9;
 }
 

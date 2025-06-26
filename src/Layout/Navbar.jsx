@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav
-      className="d-flex justify-content-between align-items-center px-4 py-3 shadow-sm"
+      className="d-flex justify-content-between fixed-top align-items-center px-4 py-3 shadow-sm"
       style={{ backgroundColor: '#E8F5E9', width: '100%' }}
     >
       {/* User Info */}
