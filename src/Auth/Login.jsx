@@ -11,7 +11,7 @@ const Login = () => {
           src="https://i.ibb.co/KxdfWFTv/3db2775f70a199b26bc47425ca16af18-1-removebg-preview.png"
           alt="Logo"
           className="mb-1"
-          style={{ height: '200px', objectFit: 'contain' }}
+          style={{ height: '150px', objectFit: 'contain' }}
         />
 
         {/* Title */}
