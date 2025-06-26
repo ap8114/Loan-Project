@@ -2,14 +2,14 @@
   margin: 0px;
   padding: 0px;
 }
-.container {
+.container{
   margin-top: 10px;
   margin-bottom: 10px;
 }
 @font-face {
-  font-family: "Unbanist";
-  src: url("path-to-your-font/Unbanist.woff2") format("woff2"),
-    url("path-to-your-font/Unbanist.woff") format("woff");
+  font-family: 'Unbanist';
+  src: url('path-to-your-font/Unbanist.woff2') format('woff2'),
+    url('path-to-your-font/Unbanist.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +37,7 @@ main {
   /* height: 100vh; */
 }
 
-@media (min-width: 320px) and (max-width: 365px) {
+@media (min-width: 320px) and  (max-width: 365px) {
   main {
     top: -30px;
     left: -326px;
@@ -45,11 +45,9 @@ main {
     /* height: 100vh; */
     position: relative;
   }
-  .right-side-content.collapsed {
-  padding-left: 0px;
+
 }
-}
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 375px) and  (max-width: 768px) {
   main {
     top: 15px;
     left: 40px;
@@ -57,11 +55,9 @@ main {
     height: 25vh;
     position: fixed;
   }
-  .right-side-content.collapsed {
-  padding-left: 0px;
+
 }
-}
-@media (min-width: 768px) and (max-width: 884px) {
+@media (min-width: 768px) and (max-width: 884px){
   main {
     top: 220px !important;
     left: 150px !important;
@@ -69,9 +65,6 @@ main {
     height: auto;
     position: fixed;
   }
-  .right-side-content.collapsed {
-  padding-left: 0px;
-}
 }
 
 .login-container {
@@ -193,9 +186,10 @@ select.form-input {
 
 .loogin-button {
   background-color: #fff;
-  color: #ffffff;
+  color: #4a766e;
   border: 1px solid gray;
   margin-right: 380px;
+
 }
 
 .siignup-button:hover {
@@ -262,9 +256,7 @@ select.form-input {
 
 /* maindashbord start */
 .main-content {
-  display: inline-flex;
- gap: 30px;
- 
+  display: flex;
 }
 
 /* maindashbord end */
@@ -274,31 +266,8 @@ select.form-input {
   border-bottom: 1px solid #949494;
   position: fixed;
   z-index: 5;
-  background-color: #3b62ce;
+  background-color: white;
   width: 100%;
-}
-
-.nav-content {
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-.nav-bran {
-  display: flex;
-  align-items: center;
-}
-
-.search-bar {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-}
-
-.nav-main-icon {
-  display: flex;
-  align-items: center;
 }
 
 .nav-conte {
@@ -306,9 +275,9 @@ select.form-input {
 }
 
 .nav-brand {
-  color: white;
+  color: #578E7E;
   line-height: 54.46px;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 700;
   font-family: inter;
 }
@@ -317,9 +286,7 @@ select.form-input {
   .nav-brand {
     font-size: 23px;
   }
-  .search-bar {
-    font-size: 50px;
-  }
+
   .nav-taggle-icon {
     margin-left: 15px !important;
   }
@@ -330,7 +297,7 @@ select.form-input {
 }
 
 .nav-brand:hover {
-  color: #9ac0fa;
+  color: #578E7E;
 }
 
 .nav-content {
@@ -352,11 +319,11 @@ select.form-input {
 }
 
 .nav-taggle-icon a {
-  color: #578e7e;
+  color: #578E7E;
 }
 
 .nav-taggle-icon a:hover {
-  color: #578e7e;
+  color: #578E7E;
 }
 
 .nav-main-icon {
@@ -379,19 +346,19 @@ select.form-input {
 }
 
 .user-icon {
-  color: white;
+  color: #578E7E;
 }
 
-/* .user-icon:hover {
-  color: #0b0bdc;
-} */
+.user-icon:hover {
+  color: #578E7E;
+}
 
 /* navbar end  */
 /* right-side-content start*/
 .right-side-content {
   width: 100%;
-  /* margin-top: 85px; */
-  padding-left: 0px;
+  margin-top: 85px;
+  padding-left: 320px;
   /* background-color: #f2f2f2; */
   /* height: 668px; */
   /* overflow: scroll; */
@@ -400,20 +367,9 @@ select.form-input {
 
 @media (max-width: 820px) {
   .right-side-content.collapsed {
-    padding-left: 0px;
+    padding-left: 80px !important;
   }
-  .right-side-content {
-    width: 100%;
-    margin-top: 85px;
-    padding-left: 0px;
-    /* background-color: #f2f2f2; */
-    /* height: 668px; */
-    /* overflow: scroll; */
-    transition: padding-left 0.3s;
-  }
-  .right-side-content.collapsed {
-  padding-left: 0px;
-}
+
 }
 
 .right-side-content.collapsed {
@@ -525,6 +481,7 @@ select.form-input {
   margin-top: 30px;
 }
 
+
 .section-title {
   font-size: 18px;
   font-weight: bold;
@@ -556,6 +513,7 @@ select.form-input {
   color: #333;
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contract-details-container {
@@ -567,6 +525,7 @@ select.form-input {
     align-items: flex-start;
     gap: 10px;
   }
+
 
   .back-button {
     font-size: 5px;
@@ -648,61 +607,61 @@ select.form-input {
   cursor: pointer;
   transition: all 1s linear;
 }
-.fa-arrow-right {
+.fa-arrow-right{
   content: "\f061";
   position: relative;
   left: -20px;
   top: 80px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .fa-arrow-right {
-    display: none;
+  .fa-arrow-right{
+    display: none ;
   }
 }
 .workflow-line {
   width: 4px;
   margin: auto;
 }
-.workflow-card:hover {
+.workflow-card:hover{
   transform: scale(1.1);
 }
-.fa-check {
+.fa-check{
   cursor: pointer;
   transition: all 0.5 linear;
 }
-.fa-circle-check:hover {
+.fa-circle-check:hover{
   color: green;
   text-shadow: 1px 1px 20px green, 1px 1px 20px green;
   transform: scale(1.5);
 }
-.fa-xmark {
+.fa-xmark{
   cursor: pointer;
   transition: all 0.5 linear;
 }
-.fa-xmark:hover {
+.fa-xmark:hover{
   color: red;
   text-shadow: 1px 1px 20px red, 1px 1px 20px red;
   transform: scale(1.5);
 }
-.p-dialog-title {
+.p-dialog-title{
   padding: 15px;
-  color: #578e7e;
+  color: #578E7E;
   font-weight: bold;
 }
-.p-dialog-content {
+.p-dialog-content{
   padding-left: 20px;
 }
-.p-dialog-footer {
+.p-dialog-footer{
   padding: 20px !important;
 }
-.p-confirm-dialog-accept {
+.p-confirm-dialog-accept{
   padding: 0px 10px;
   border-radius: 5px;
-  background-color: #578e7e;
+  background-color: #578E7E;
   border: none;
   margin-left: 5px;
 }
-.p-button-label {
+.p-button-label{
   color: black;
 }
 .workflow-card {
@@ -713,6 +672,7 @@ select.form-input {
   margin-bottom: 20px;
   position: relative;
 }
+
 
 .workflow-line i {
   font-size: 1.5rem;
@@ -725,6 +685,7 @@ select.form-input {
 /* approvialworkfolw */
 /* renewalmanage */
 .btn-renewal {
+
   color: #ff6f00;
 
   border: 1px solid #ff6f00;
@@ -736,39 +697,47 @@ select.form-input {
   padding: 5px 10px;
 
   border-radius: 6px;
+
 }
 
+
+
 .btn-renewal:hover {
+
   background-color: #ff6f00;
 
   color: #fff;
   -webkit-box-shadow: 0px 0px 20px 0px #ff6f00;
+
 }
 
 .renewaldownload {
+
   color: green;
   transition: all 0.5 linear;
+
 }
+
 
 .renewaldownload:hover {
   color: green;
   text-shadow: 1px 1px 20px green, 1px 1px 20px green;
-  transform: scale(1.5);
+  transform: scale(1.5)
 }
-.fa-pen-to-square:hover {
+.fa-pen-to-square:hover{
   color: #624de3 !important;
   text-shadow: 1px 1px 20px #624de3, 1px 1px 20px #624de3;
-  transform: scale(1.5);
+  transform: scale(1.5)
 }
-.fa-eye:hover {
+.fa-eye:hover{
   color: rgb(13, 153, 255) !important;
   text-shadow: 1px 1px 20px rgb(13, 153, 255), 1px 1px 20px rgb(13, 153, 255);
-  transform: scale(1.5);
+  transform: scale(1.5)
 }
-.fa-comment:hover {
+.fa-comment:hover{
   color: rgb(13, 153, 255) !important;
   text-shadow: 1px 1px 20px rgb(13, 153, 255), 1px 1px 20px rgb(13, 153, 255);
-  transform: scale(1.5);
+  transform: scale(1.5)
 }
 /* renewalmanage */
 /* contractmanage */
@@ -783,17 +752,17 @@ select.form-input {
   color: #0d99ff;
   cursor: pointer;
 }
-.activebadge {
+ .activebadge {
   background-color: #39bf1b;
 }
-.expiredbadge {
+ .expiredbadge {
   background-color: #ff0000;
 }
 .renewalbadge {
   padding: 4px 30px !important;
   background-color: #ff9318;
 }
-.terminatedbadge {
+.terminatedbadge{
   padding: 4px 40px !important;
   background-color: #ff0000;
 }
@@ -871,7 +840,7 @@ select.form-input {
 }
 
 .form-select {
-  /* padding: 10px; */
+  padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -901,6 +870,7 @@ select.form-input {
 }
 
 @media (max-width: 768px) {
+
   .notifi-button-group {
     padding: 0px !important;
   }
@@ -1000,40 +970,4 @@ select.form-input {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-@media (max-width: 1200px) {
-  .right-side-content {
-    padding-left: 260px;
-  }
-  .right-side-content.collapsed {
-    padding-left: 70px; /* Match collapsed sidebar width */
-  }
-}
-
-@media (max-width: 992px) {
-  .right-side-content {
-    padding-left: 230px;
-  }
-  .right-side-content.collapsed {
-    padding-left: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .right-side-content {
-    padding-left: 200px;
-  }
-  .right-side-content.collapsed {
-    padding-left: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  .right-side-content {
-    padding-left: 0; /* Full width on small screens */
-  }
-  .right-side-content.collapsed {
-    padding-left: 0; /* Full width even when collapsed */
-  }
-}
-
 
